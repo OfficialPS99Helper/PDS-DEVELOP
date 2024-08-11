@@ -1,0 +1,30 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create("PS99MODDED")
+
+---Tabs---
+
+local tab1 = window:CreateTab("PS99 YIELD")
+local tab2 = window:CreateTab("Rest")
+
+---buttons---
+
+tab1:CreateButton("YIELDER PS99 EVENTS", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SenhorLDS/ProjectLDSHUB/main/Pet%20Simulator%2099'))()
+
+tab1:CreateTextbox("Speed", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab1:CreateTextbox("Jumppower", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+tab2:CreateButton("test INFITIE work", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+---WARING---
+
+tab1:CreateWarning("Beware! anyone can get banned. use wisely")
